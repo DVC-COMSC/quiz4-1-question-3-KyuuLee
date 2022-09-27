@@ -5,7 +5,7 @@
       "setup": "",
       "run": "g++ -std=c++11 main.cpp && ./a.out",
       "input": "10 20 30",
-      "output": "/^30[0-9,a-z, \" \"]*20[0-9,a-z, \" \"]*10",
+      "output": "\\A30[0-9,a-z, \" \"]*20[0-9,a-z, \" \"]*10\\Z",
       "comparison": "regex",
       "timeout": 10,
       "points": 1
