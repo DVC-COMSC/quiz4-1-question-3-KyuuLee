@@ -1,20 +1,31 @@
-// Complete the following program. 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-	const double rate1 = 1.10;
-	const double rate2 = 2.20;
-	const double rate3 = 3.70;
-	const double rate4 = 4.80;
-	double total_charge;
-	double weight, distance, rate;
+	int num1, num2, num3;
 
-	
-        // **********************
-        // Your code 
-        // **********************
-        
-	cout << total_charge << endl;
+	cout << "Enter three numbers : ";
+	cin >> num1 >> num2 >> num3;
+
+	if (num1 > num2)
+	{
+		if (num1 > num3)
+			if (num2 > num3)
+				cout << num1 << " " << num2 << " " << num3 << endl;
+			else
+				cout << num1 << " " << num3 << " " << num2 << endl;
+		else
+			cout << num3 << " " << num1 << " " << num2 << endl;
+	}
+	else
+	{
+		if (num2 > num3)
+			if (num1 > num3)
+				cout << num2 << " " << num1 << " " << num3 << endl;
+			else
+				cout << num2 << " " << num3 << " " << num1 << endl;
+		else
+			cout << num3 << " " << num2 << " " << num1 << endl;
+	}
 }
